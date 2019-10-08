@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FPSInput : MonoBehaviour
+[RequireComponent(typeof(CharacterController))]
+[AddComponentMenu("Control script/Keyboard Input")]
+public class KeyboardInput : MonoBehaviour
 {
     public float speed = 6.0f;
     public float gravity = -9.8f;
